@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="question-count" id="question-count">Question 1 of 10</div>
+        </div>
+
+        <div class="quiz-body">
+            <div class="question-card">
+                <h2 id="question">Question text goes here</h2>
+                <div class="options-container" id="options-container">
+                    <!-- Options will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-footer">
+            <button id="next-btn" class="btn">Next Question</button>
+        </div>
+
+        <div class="results-container hidden" id="results-container">
+            <h2>Quiz Completed!</h2>
+            <p>Your score: <span id="score">0</span>/<span id="total-questions">10</span></p>
+            <p id="score-message"></p>
+            <button id="restart-btn" class="btn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
